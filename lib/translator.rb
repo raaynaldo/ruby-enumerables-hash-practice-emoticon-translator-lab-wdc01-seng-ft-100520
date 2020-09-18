@@ -14,6 +14,11 @@ end
 def get_japanese_emoticon(lib, emoticon)
   # code goes here
   e = load_library(lib)
+  e.each{|key, value|
+    if(value[:english] == emoticon)
+      return value[:japanese]
+    end
+  }
 end
 
 def get_english_meaning
