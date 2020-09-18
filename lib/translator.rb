@@ -20,7 +20,7 @@ def get_japanese_emoticon(lib, emoticon)
     end
   }
 
-  puts "sorry"
+  return "Sorry, that emoticon was not found"
 
 end
 
